@@ -199,7 +199,7 @@ class SegmentationNode(Node):
             
             #masking_inner = self.masking_result(copy_img, aux_msg.mask.data, color) # 영역 내부를 색칠 
             
-            if label == 'lane2':
+            if label == LANE2_CLASS_NAME:
                 color = WHITE
                 result_img = self.masking_result(black_img, aux_msg.mask.data, color) # 영역 외부는 검정
                     
